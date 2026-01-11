@@ -1,32 +1,26 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>grat inc. | Global Brand Strategy & Creative</title>
-    <!-- デザインを整えるためのTailwind CSSを読み込みます -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      /* フォントの滑らかさを設定 */
-      body {
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- ここにApp.jsxの中身が描画されます -->
-    <div id="root"></div>
-
-    <!-- Reactを動かすための設定 -->
-    <script type="module">
-      import React from 'react';
-      import ReactDOM from 'react-dom/client';
-      import App from './App.jsx';
-
-      ReactDOM.createRoot(document.getElementById('root')).render(
-        React.createElement(React.StrictMode, null, React.createElement(App))
-      );
-    </script>
-  </body>
-</html>
+{
+  "name": "grat-official-site",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "framer-motion": "^10.16.4",
+    "lucide-react": "^0.284.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.1.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.3",
+    "vite": "^4.4.11"
+  }
+}
